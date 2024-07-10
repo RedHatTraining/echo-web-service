@@ -2,7 +2,7 @@
 Echo Server
 ==============================================
 
-Meant to be a trivial web service which echos request information
+A trivial web service which echos request information
 for GET and POST requests.
 
 Implmented using just the python standard library.
