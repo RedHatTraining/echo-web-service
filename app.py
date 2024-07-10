@@ -61,8 +61,8 @@ def main():
     port = os.environ.get("ECHO_WEBAPP_PORT", "8000")
 
     # handle kubernetes supplied envvars of form
-    # tcp://ipaddr/port
-    port = port.split("/")[-1]
+    # tcp://ipaddr:port
+    port = port.split(":")[-1]
 
     server_address = ('', int(port))
     LOG.info(f"echo server binding to port {port}")
